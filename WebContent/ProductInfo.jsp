@@ -84,7 +84,7 @@ int result=0;
  
 %>
   <FORM ACTION="ProductInfo.jsp" METHOD="POST">
-<h3>Enter and Edit the Product Here...</h3>
+<h3>Enter the Product Here...</h3>
 <table>  
                 <tr>  
                     <td>Product Id</td>  

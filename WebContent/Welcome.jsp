@@ -40,25 +40,29 @@
         <table>
       <tr>  
                     <td><b>Product ID </b></td>  
-                        <td><b>Product Name </b></td> 
+                    <td><b>Product Name </b></td> 
                     <td><b>Product Image</b></td> 
-                 
-                     <td><b>Product Description </b></td> 
+                    <td><b>Product Description </b></td> 
                      
                      
                 </tr>
             <% while(resultset.next()){ %>
+            
+            </form>
+              <form   action="Editprod.jsp">
             <tr>  
-                      
-                    <td><input type="submit" value=<%= resultset.getString("ID") %>> <a href="ProductInfo.jsp" ></a></td>
+           <td><input type="submit" value=<%= resultset.getString("ID") %>> <a href="Editprod.jsp" ></a></td>
          
-                    <td><input type="text" name="Name" value=<%= resultset.getString("Name") %>></td>  
+                    <td><input type="text" name="Name" value=<%= resultset.getString("Name")%>></td>  
                 </tr>
                 </form>
                 
             
             <% } %>
-           </table> 
+           </table>
+           
+           
+            
       <br>
       <br>
       <br>
